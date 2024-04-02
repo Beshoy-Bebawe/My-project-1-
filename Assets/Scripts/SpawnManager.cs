@@ -36,9 +36,9 @@ public class SpawnManager : MonoBehaviour
       //length starts from 1 index starts from 0
      Vector3 spawnpos = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,spawnPosZ);
      Instantiate(animalPrefabs[animalIndex], spawnpos, animalPrefabs[animalIndex].transform.rotation);
-     Vector3 spawnpos2 = new Vector3(spawnPosX,0,Random.Range(-spawnRangeZ,spawnRangeZ));
+     Vector3 spawnpos2 = new Vector3(spawnPosX,0,Random.Range(-spawnRangeZ,spawnRangeZ));// right
      Instantiate(animalPrefabs2[animalIndex],spawnpos2, animalPrefabs2[animalIndex].transform.rotation);
-     Vector3 spawnpos3 = new Vector3(-spawnPosX,0,Random.Range(-spawnRangeZ,spawnRangeZ));
+     Vector3 spawnpos3 = new Vector3(-spawnPosX,0,Random.Range(-spawnRangeZ,spawnRangeZ));// left
      Instantiate(animalPrefabs3[animalIndex],spawnpos3, animalPrefabs3[animalIndex].transform.rotation);
 
     }

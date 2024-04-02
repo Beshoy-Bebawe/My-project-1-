@@ -9,6 +9,8 @@ public class PlayerController2 : MonoBehaviour
     public float xRange = 10;
     public float zRange = 10;
     public float forwardInput;
+    public int score = 0;
+    public int lives = 3;
     public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,13 @@ public class PlayerController2 : MonoBehaviour
             Instantiate(projectilePrefab , transform.position , projectilePrefab.transform.rotation);
 
         }
+        
 }
+  public void UpdateScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+        Debug.Log("Score:" + score);
+        
+    }
 
 }
