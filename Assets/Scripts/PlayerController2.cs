@@ -60,9 +60,26 @@ public class PlayerController2 : MonoBehaviour
 }
   public void UpdateScore(int scoreToAdd)
     {
-        score += scoreToAdd;
+        score += 1;
         Debug.Log("Score:" + score);
         
     }
+ public void UpdateLives(int livesToAdd)
+    {
+       
+        if(lives < 1)
+        {   
+            lives = 0;
+            Debug.Log("Game Over!");
+            
 
+        }
+        else
+        {   
+           lives -= 1;
+        Debug.Log("Lives" + lives);
+            
+        }
+        
+    }
 }

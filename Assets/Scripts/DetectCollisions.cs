@@ -30,7 +30,7 @@ public class DetectCollisions : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Game Over!");
+            player.UpdateLives(0);
             
         }
 
